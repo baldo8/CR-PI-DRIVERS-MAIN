@@ -10,20 +10,17 @@ module.exports = (sequelize) => {
       allowNull: false,
       defaultValue: DataTypes.UUIDV4 // if id is not provided, sequelize will generate one uuidv4 is vary rare to have same id
     },
-    forename: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    surname: {
-      type: DataTypes.STRING,
-      allowNull: false,
+      unique: true,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     image: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     nationality: {
