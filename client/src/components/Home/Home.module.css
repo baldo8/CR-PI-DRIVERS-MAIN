@@ -1,0 +1,14 @@
+.div {
+    margin-bottom: 16px;
+  }
+  
+  .divCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  
+  p {
+    display: none;
+  }

@@ -16,4 +16,4 @@ const getDrivers = async (req, res) => {
 
 module.exports = {
   getDrivers,
-};
+}

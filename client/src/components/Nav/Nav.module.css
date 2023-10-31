@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn {
+  color: white;
+  background-color: blue;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid red;
+  box-shadow: 0 0 5px blue;
+  margin-left: auto; /* Moves the search bar to the right */
+  padding: 8px;
+}
+
+

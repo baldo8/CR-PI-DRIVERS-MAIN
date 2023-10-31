@@ -5,9 +5,13 @@ const getDriverByName = async (req, res) => {
 
   try {
     const drivers = await getAllDrivers();
-    const filteredDrivers = drivers.filter((driver) =>
-      driver.name.toLowerCase() == name.toLowerCase()
-    );
+    // Create a regular expression pattern to match the search query at the start of the driver name i flag is used to perform a case-insensitive ^ symbol, which matches the start of the driver name
+    const pattern = new RegExp(`^${name}`, 'i');
+  
+     // Filter the drivers by name using the regular expression pattern The test method of the regular expression pattern is then used to check if the driver name matches the search pattern.
+     const filteredDrivers = drivers.filter((driver) =>
+     pattern.test(driver.name)
+   );
 
     if (filteredDrivers.length === 0) {
       return res.status(404).json({ message: "No drivers found with the given name." });

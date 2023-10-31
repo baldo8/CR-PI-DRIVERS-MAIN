@@ -4,11 +4,13 @@ import { Link } from "react-router-dom"
 
 const LandingPage = () => {
     return (
-    <div >
-        <h1 className={style.h1}>¡Bienvenidos!</h1>
-            <h3>Bienvenidos a la aplicacion donde vas a poder informarte todo sobre F1 y crear tus propios equipos personalizados  </h3>
+
+        
+    <div className={style.container}>
+        <h1 className={style.wel}>Welcome Driver Fans</h1>
+           
         <Link to={"/home"}>
-        <button className={style.btn}>INGRESAR</button>
+        <button className={style.button}>Login find your driver</button>
         </Link>
 
 

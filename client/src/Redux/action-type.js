@@ -1,0 +1,16 @@
+export const GET_DRIVERS = "GET_DRIVERS";
+export const GET_TEAMS = "GET_TEAMS";
+
+export const SEARCH_BY_ID = "SEARCH_BY_ID";
+export const SEARCH_BY_NAME = "SEARCH_BY_NAME";
+
+export const ORDER_ALPHABETICALLY = "ORDER_ALPHABETICALLY";
+export const ORDER_DATE_OF_BIRTH = "ORDER_DATE_OF_BIRTH";
+
+export const FILTER_BY_TEAMS = "FILTER_BY_TEAMS";
+export const FILTER_BY_ORIGIN = "FILTER_BY_ORIGIN";
+
+export const CREATE_NEW_DRIVER = "CREATE_NEW_DRIVER";
+export const DELETE_DRIVER = "DELETE_DRIVER";
+export const RESET_DETAIL = "RESET_DETAIL";
+

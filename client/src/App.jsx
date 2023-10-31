@@ -1,5 +1,5 @@
 
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, } from 'react-router-dom'
 import './App.css'
 import LandingPage from './components/LandingPage/LandingPage'
 import Home from './components/Home/Home'
@@ -14,10 +14,11 @@ const App = ()=> {
       <div className='App'>
 
         <Routes>
-          <Route path='/' element={LandingPage} />
-          <Route path='/home' element={Home} />
-          <Route path='/detail/:id' element={Detail} />
-          <Route path='/create' element={DriverForm} />
+          {/* <Route path='/' element={<LandingPage} /> */}
+          <Route path="/" element={<LandingPage/>}/>
+          <Route path='/home' element={<Home/>} />
+          <Route path='/detail/:id' element={<Detail/>} />
+          <Route path='/create' element={<DriverForm/>} />
         </Routes>
       </div>
     </>

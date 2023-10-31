@@ -1,0 +1,33 @@
+.container {
+    background-image: url('https://w0.peakpx.com/wallpaper/1012/612/HD-wallpaper-artstation-koenigsegg-jesko-absolut-cgi.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .wel {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: .75%;
+    background-color: black;
+  }
+
+  .button {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }

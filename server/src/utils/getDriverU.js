@@ -30,7 +30,7 @@ async function getAllDrivers(){
    
     const driverDB = await Driver.findAll({
       include: [
-        { model: Team, attributes: ['name'] }
+        { model: Team, attributes: ['name'] } //retrieves the team names from the teams table
       ],
       attributes: ['id', 'name', 'description', 'image', 'nationality', 'dob'],// attributes option sets especific attributes from the drivers table
     }).then((drivers) => {

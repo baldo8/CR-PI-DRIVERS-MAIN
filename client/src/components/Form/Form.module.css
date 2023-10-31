@@ -1,0 +1,129 @@
+/* Form.module.css */
+
+.divContainer {
+  width: 800px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/1293830/header.jpg?t=1692226229);
+  background-size: cover;
+  background-position: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 300px;
+}
+
+.divContainerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.p {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pE {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.label {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputField {
+  width: 200%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: blue 1px solid;
+  border-radius: 5px;
+}
+
+.signupContainer {
+  color: red;
+  font-size: 14px;
+  width: 200%;
+font-weight: bold;
+}
+
+.date {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: blue 1px solid;
+  border-radius: 5px;
+  width: 200%;
+}
+
+.textarea {
+  width: 200%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: blue 1px solid;
+  border-radius: 5px;
+}
+
+.select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: blue 1px solid;
+  border-radius: 5px;
+  width: 200%;
+}
+
+.pTeam {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.buttonhome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.buttonhome button {
+  background-color: red;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

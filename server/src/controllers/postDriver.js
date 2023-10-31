@@ -16,7 +16,7 @@ const postDriver = async (req, res) => {
 
     // Check if the driver was already existing
     if (!created) {
-      return res.status(400).json({ status: "Driver already exists" });
+      return res.status(409).json({ status: "Driver already exists" });
     }
 
     // Find and associate the teams

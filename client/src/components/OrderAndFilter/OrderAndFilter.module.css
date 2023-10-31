@@ -1,0 +1,13 @@
+.selectorContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .selector {
+    color: white;
+    background-color: red;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }

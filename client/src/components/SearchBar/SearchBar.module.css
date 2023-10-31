@@ -1,0 +1,25 @@
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    box-shadow: 0 0 6px blue;
+  }
+  
+  .input {
+    color: black;
+    background-color: white;
+    flex: 1;
+    padding: 8px;
+    border-radius: 2px;
+    border: 2px solid red;
+  }
+  
+  .btn {
+    color: white;
+    background-color: blue;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

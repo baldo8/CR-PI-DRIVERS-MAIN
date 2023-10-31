@@ -6,7 +6,7 @@ const getDriverById = async (req, res) => {
     const { id } = req.params;
     try {
         data = await getAllDrivers();
-       
+       // match the driver by id so that we can return the driver needed
         const matchedDriver = data.find((driver) => {
             return driver.id == id;
           });

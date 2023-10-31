@@ -8,7 +8,7 @@ const getTeams = async (req, res) => {
       const { data } = await axios.get("http://localhost:5000/drivers");
   
       // Extract the teams from the drivers data
-      const teams = data.map((driver) => driver.teams?.split(", ") ?? []);
+      const teams = data.map((driver) => driver.teams?.split(/,|\s/) ?? []);
   
       // Flatten the teams array into a single array
       const flattenedTeams = teams.flat();
@@ -22,7 +22,7 @@ const getTeams = async (req, res) => {
       }
   
       // Return a success message
-      return res.status(200).json({ message: "Teams created successfully" });
+      return res.status(200).json({ uniqueTeams});
     } catch (error) {
       // Handle any errors
       console.error(error);
