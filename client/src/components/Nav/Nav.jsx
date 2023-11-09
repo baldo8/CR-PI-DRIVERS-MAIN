@@ -9,6 +9,7 @@ import SearchBar from "../SearchBar/SearchBar"
 const Nav = () => {
     const dispatch = useDispatch()
     const [cards, setCards] = useState([])
+    const [searchE, setSearchE] = useState({})
     const handleChange = (event) => {
         event.preventDefault() 
         const values = event.target.value
@@ -18,6 +19,14 @@ const Nav = () => {
     const handleSubmit = (event) => {
         event.preventDefault()
         dispatch(searchByName(cards))
+        .then(() => {
+            setSearchE({error:"Drivers found"});
+        })
+        .catch((error) => {
+            if (error.response && error.response.status === 404) {
+                setSearchE({error:"No drivers found"});
+            } 
+          });
 
     }
 
@@ -27,11 +36,15 @@ const Nav = () => {
     }, [dispatch])
 
     return (
+        <div className={style.search}>
+            <p className={style.pE1}>{searchE.error}</p>
         <div className={style.nav}>
+            
          <Link to={"/create"}>
                     <button className={style.btn}>Create a Driver</button>
          </Link>
          <SearchBar handleSubmit={handleSubmit} handleChange={handleChange} />
+        </div>
         </div>
     )
 }

@@ -1,4 +1,3 @@
-
 .card {
     background-color: blue;
     border: 1px solid red;
@@ -7,31 +6,37 @@
     justify-content: center;
     width: 300px;
     height: 400px;
-    
     align-content: center;
-   
-    border-radius: 90px;
+    border-radius: 35px;
+    overflow: hidden;
   }
-
-
-.name {
+  
+  .name {
     justify-content: center;
     text-align: center;
     color: white;
     font-size: 150%;
     margin-top: 1px;
-
-}
-
-.teams {
+  }
+  
+  .teams {
     margin-top: 1px;
     color: black;
-}
-
-.image {
+  }
+  
+  .image {
     background-color: blue;
     object-fit: cover;
     width: 90%;
     height: 300px;
     top: 10%;
-}
+  }
+  .button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

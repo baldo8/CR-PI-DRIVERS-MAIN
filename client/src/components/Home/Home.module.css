@@ -1,11 +1,15 @@
-.div {
+.filterNavPagina {
     margin-bottom: 16px;
+  }
+  .imageBD{
+    background-image: url(https://render.fineartamerica.com/images/rendered/default/flat/puzzle/images/artworkimages/medium/3/vintage-cars-races-posters-collage-carlos-v.jpg?&targetx=0&targety=-19&imagewidth=750&imageheight=1050&modelwidth=750&modelheight=1000&backgroundcolor=353237&orientation=1&producttype=puzzle-18-24&brightness=491&v=6);
+    width: 1300px;
   }
   
   .divCard {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 16px;
   }
   

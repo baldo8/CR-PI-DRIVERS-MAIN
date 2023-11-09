@@ -1,9 +1,12 @@
 .selectorContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
   }
   
   .selector {
+    width: 900px;
     color: white;
     background-color: red;
     padding: 8px;

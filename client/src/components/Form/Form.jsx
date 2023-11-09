@@ -23,6 +23,7 @@ const DriverForm = () => {
     }
     const [inputData, setInputData] = useState(initialValues)
     const [error, setError] = useState({})
+    const [createdDriver, setCreatedDriver] = useState({})
     const [isSubmit, setIsSubmit] = useState(false)
     const handleChange = (event) => {
         if (event.target.name === "teams") {
@@ -45,6 +46,7 @@ const DriverForm = () => {
         console.log(error)
         if (Object.keys(error).length === 0 && isSubmit) {
             dispatch(createNewDriver(inputData))
+            setCreatedDriver({driverCreated:"Driver has been Created"})
         }
     }, [error])
         useEffect(() => {
@@ -116,6 +118,7 @@ const DriverForm = () => {
                     <br />
                     <p className={style.pE}>{error.teams}</p>
                     <button className={style.button} type="submit"  >Create</button> 
+                    <p className={style.pE}>{createdDriver.driverCreated}</p>
                     <Link className={style.buttonhome}  to="/home">
                     <button>Home</button>
                     </Link>

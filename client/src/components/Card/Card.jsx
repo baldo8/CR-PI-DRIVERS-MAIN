@@ -14,10 +14,9 @@ const dispatch = useDispatch()
         dispatch(deleteDriver(id))
     }
     return (
+        <div>
         <div className={style.card}>
-            {/*//if the id is not a number it is created in database and can be deleted */}
-            {typeof id !== "number" ?(<button onClick={()=>onClose(id)} >Delete</button>) : ("")}
-                
+               
                 <h1 className={style.name}>{name}</h1>
                 <Link to={`/detail/${id}`}>
                     {typeof id !== "number"
@@ -30,6 +29,11 @@ const dispatch = useDispatch()
                     index = index + 1
                     if (index === teams.length) {return e} else {return e + "/ "}})}
                 </h4>
+                
+        </div>
+        {/*//if the id is not a number it is created in database and can be deleted */}
+        {typeof id !== "number" ?(<button className={style.btn} onClick={()=>onClose(id)} >Delete</button>) : ("")}
+             
         </div>
     )
 }

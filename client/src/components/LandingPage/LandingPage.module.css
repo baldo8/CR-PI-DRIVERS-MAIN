@@ -1,5 +1,5 @@
 .container {
-    background-image: url('https://w0.peakpx.com/wallpaper/1012/612/HD-wallpaper-artstation-koenigsegg-jesko-absolut-cgi.jpg');
+    background-image: url('https://images.pling.com/img/00/00/61/26/90/1574755/630f5a2b32ec31ef5edb4773ec0ba6571922f2668e7d1febdd56f2be032879e46284.jpg');
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
@@ -19,7 +19,7 @@
     font-weight: bold;
     position: absolute;
     top: .75%;
-    background-color: black;
+    background-color: transparent;
   }
 
   .button {
@@ -27,7 +27,7 @@
     font-size: 20px;
     font-weight: bold;
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
   }
